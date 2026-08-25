@@ -1,6 +1,5 @@
-console.log("one");
-for(i=0;i<100000;i++){
-    console.log("i: "+i);
-}
-//setTimeout(()=>{console.log("two")},1000);
-console.log("three");
+const container = document.getElementById("container");
+const button=document.getElementById("btn");
+console.log(container);
+console.log(button);
+button.addEventListener("click", ping);
