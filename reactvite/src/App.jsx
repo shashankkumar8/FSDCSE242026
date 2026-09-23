@@ -17,9 +17,41 @@ function App() {
       <h3 style={{color:"lightblue",textAlign:'left'}}>Brach = CSE</h3>
       <h3 style={{color:"pink",textAlign:'left'}}>Section = 24</h3>
       <h3 style={{color:"orange",textAlign:'left'}}>Skills = Java , MERN Stack , DSA , Vibe Coding </h3>
+      <ImageManipulation></ImageManipulation>
       <ICard/>
     </div>
     </>
   )
 }
 export default App
+// import React from 'react'
+// import { useState } from 'react'
+// import heroImg from './assets/hero.png'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
+
+
+// import { useState } from 'react'
+// import './App.css'
+// // import ICard from './components/ICard'
+// // import IcardGalary from './components/IcardGalary'
+// // import MyState from './components/myState'
+// // import ColorChange from './components/ColorChange'
+// import College from './components/College'
+// function App() {
+//  return (
+// <>
+// <div id='main'>
+//  {/* <MyState /> */}
+// <College />
+// </div>
+//  </>
+//  )
+// }
+
+// export default App
+
+import ImageManipulation from './components/ImageManipulation';
+
+
+
