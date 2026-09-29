@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import ICard from './components/ICard'
 import ICardGallery from './components/ICardGallery'
+import './App.css';
+import ColorChange from './components/ColorChange';
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
       <h3 style={{color:"orange",textAlign:'left'}}>Skills = Java , MERN Stack , DSA , Vibe Coding </h3>
       <ImageManipulation></ImageManipulation>
       <ICard/>
+    </div>
+    <div>
+      <ColorChange></ColorChange>
     </div>
     </>
   )
@@ -52,6 +57,13 @@ export default App
 // export default App
 
 import ImageManipulation from './components/ImageManipulation';
+
+
+import './App.css';
+import ColorChange from './components/ColorChange';
+import ImageManipulation from './components/ImageManipulation';
+// import UpdateDetails from './components/UpdateDetails';
+
 
 
 
