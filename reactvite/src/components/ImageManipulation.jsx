@@ -5,6 +5,7 @@ function ImageManipulation() {
     const[red ,setRed]=useState(0);
     const[green ,setGreen]=useState(0);
     const[blue ,setBlue]=useState( 0);
+    const[catangle, setCatAngle] = useState(30); // State for cat image rotation angle
 
     
     function increaseHeight() {
@@ -24,20 +25,28 @@ function ImageManipulation() {
         setGreen(Math.random()*256);
         setBlue(Math.random()*256);
     }
-  return (
-    <div>
-        <h2 style={{color:"red", textAlign:"center"}}>Image Manipulation</h2>
-        <div style={{height:"300px", width:"300px", border:"2px solid black", margin:"0 auto",backgroundColor:`rgb(${red},${green},${blue})`}}>
-            <img src="C:\Users\LENOVO\FSDCSE242026\FSDCSE242026\reactvite\src\images\pngtree-surprised-shorthair-cat-expression-png-image_2654463.jpg" height={cheight} width={cwidth} alt="cat" />
-        </div>
+
+    function ImageRotate() {
+        // Implementation for image rotation
+        setCatAngle((prevAngle) => prevAngle + 45);
+    }
+
+    return (
         <div>
-            <button onClick={increaseHeight}>increase height</button>
-            <button onClick={increaseWidth}>increase width</button>
-            <button onClick={decreaseHeight}>decrease height</button>
-            <button onClick={decreaseWidth}>decrease width</button>
-            <button onClick={changeColor}>change color</button>
+            <h2 style={{color:"red", textAlign:"center"}}>Image Manipulation</h2>
+            
+            <div style={{height:"300px", width:"300px", border:"2px solid black", margin:"0 auto",backgroundColor:`rgb(${red},${green},${blue})`}}>
+                <img src="C:\Users\LENOVO\FSDCSE242026\FSDCSE242026\reactvite\src\images\pngtree-surprised-shorthair-cat-expression-png-image_2654463.jpg" height={cheight} width={cwidth} alt="cat" style={{transform: `rotate(${catangle}deg)`}} />
+            </div>
+            <div>
+                <button onClick={increaseHeight}>increase height</button>
+                <button onClick={increaseWidth}>increase width</button>
+                <button onClick={decreaseHeight}>decrease height</button>
+                <button onClick={decreaseWidth}>decrease width</button>
+                <button onClick={changeColor}>change color</button>
+                <button onClick={ImageRotate}>Image Rotate</button>
+            </div>
         </div>
-    </div>
   );
 }
 export default ImageManipulation;

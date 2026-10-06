@@ -1,69 +1,86 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-import ICard from './components/ICard'
-import ICardGallery from './components/ICardGallery'
-import './App.css';
-import ColorChange from './components/ColorChange';
-
-
-function App() {
-  return (
-    <>
-    <div style={{border:'4px solid blue',backgroundColor:"whitesmoke" , width:'400px' ,height:"500px" , textAlign:"centre"}}>
-      <h2 style={{color:"Red", textAlign:'center'}}>ABES ENGINEERING COLLEGE</h2>
-      <h3 style={{color:"brown", textAlign:'left'}}>Roll No. = 2400320101027</h3>
-      <h3 style={{color:"green", textAlign:'left'}}>Name = Shashank Kumar</h3>
-      <h3 style={{color:"lightblue",textAlign:'left'}}>Brach = CSE</h3>
-      <h3 style={{color:"pink",textAlign:'left'}}>Section = 24</h3>
-      <h3 style={{color:"orange",textAlign:'left'}}>Skills = Java , MERN Stack , DSA , Vibe Coding </h3>
-      <ImageManipulation></ImageManipulation>
-      <ICard/>
-    </div>
-    <div>
-      <ColorChange></ColorChange>
-    </div>
-    </>
-  )
-}
-export default App
-// import React from 'react'
 // import { useState } from 'react'
 // import heroImg from './assets/hero.png'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
-
-
-// import { useState } from 'react'
 // import './App.css'
-// // import ICard from './components/ICard'
-// // import IcardGalary from './components/IcardGalary'
-// // import MyState from './components/myState'
-// // import ColorChange from './components/ColorChange'
-// import College from './components/College'
+// import ICard from './components/ICard'
+// import ICardGallery from './components/ICardGallery'
+// import ImageManipulation from "./ImageManipulation";
+
+// import './App.css';
+// import ColorChange from './components/ColorChange';
+
+
 // function App() {
-//  return (
-// <>
-// <div id='main'>
-//  {/* <MyState /> */}
-// <College />
-// </div>
-//  </>
-//  )
+//   return (
+//     <>
+//     <div style={{border:'4px solid blue',backgroundColor:"whitesmoke" , width:'400px' ,height:"500px" , textAlign:"centre"}}>
+//       <h2 style={{color:"Red", textAlign:'center'}}>ABES ENGINEERING COLLEGE</h2>
+//       <h3 style={{color:"brown", textAlign:'left'}}>Roll No. = 2400320101027</h3>
+//       <h3 style={{color:"green", textAlign:'left'}}>Name = Shashank Kumar</h3>
+//       <h3 style={{color:"lightblue",textAlign:'left'}}>Brach = CSE</h3>
+//       <h3 style={{color:"pink",textAlign:'left'}}>Section = 24</h3>
+//       <h3 style={{color:"orange",textAlign:'left'}}>Skills = Java , MERN Stack , DSA , Vibe Coding </h3>
+//       <ImageManipulation></ImageManipulation>
+//       <ICard/>
+//     </div>
+//     <div>
+//       <ColorChange></ColorChange>
+//     </div>
+//     </>
+//   )
 // }
-
 // export default App
-
-import ImageManipulation from './components/ImageManipulation';
-
-
-import './App.css';
-import ColorChange from './components/ColorChange';
-import ImageManipulation from './components/ImageManipulation';
-// import UpdateDetails from './components/UpdateDetails';
+// // import React from 'react'
+// // import { useState } from 'react'
+// // import heroImg from './assets/hero.png'
+// // import reactLogo from './assets/react.svg'
+// // import viteLogo from './assets/vite.svg'
 
 
+// // import { useState } from 'react'
+// // import './App.css'
+// // // import ICard from './components/ICard'
+// // // import IcardGalary from './components/IcardGalary'
+// // // import MyState from './components/myState'
+// // // import ColorChange from './components/ColorChange'
+// // import College from './components/College'
+// // function App() {
+// //  return (
+// // <>
+// // <div id='main'>
+// //  {/* <MyState /> */}
+// // <College />
+// // </div>
+// //  </>
+// //  )
+// // }
+
+// // export default App
+
+// import ImageManipulation from './components/ImageManipulation';
+
+
+// import './App.css';
+// import ColorChange from './components/ColorChange';
+// import ImageManipulation from './components/ImageManipulation';
+// // import UpdateDetails from './components/UpdateDetails';
+
+
+import MyUseEffect from './components/MyUseEffect';
+import ImageManipulation from "./components/ImageManipulation";
+import ColorChange from "./components/ColorChange";
+
+function App() {
+  return (
+    <>
+      <ImageManipulation />
+      <ColorChange />
+      <MyUseEffect />
+    </> 
+  );
+}
+
+export default App;
 
 
